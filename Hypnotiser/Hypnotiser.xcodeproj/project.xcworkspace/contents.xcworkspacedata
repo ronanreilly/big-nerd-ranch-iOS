@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:RondomItems.xcodeproj">
+      location = "self:Hypnotiser.xcodeproj">
    </FileRef>
 </Workspace>

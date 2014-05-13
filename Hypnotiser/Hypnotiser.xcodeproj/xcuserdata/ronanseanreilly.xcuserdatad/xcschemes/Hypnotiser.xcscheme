@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8A694A9918DA393E002A7E42"
-               BuildableName = "RondomItems"
-               BlueprintName = "RondomItems"
-               ReferencedContainer = "container:RondomItems.xcodeproj">
+               BlueprintIdentifier = "8A5244C01909ACD700317CE4"
+               BuildableName = "Hypnotiser.app"
+               BlueprintName = "Hypnotiser"
+               ReferencedContainer = "container:Hypnotiser.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,14 +28,24 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "8A5244DB1909ACDF00317CE4"
+               BuildableName = "HypnotiserTests.xctest"
+               BlueprintName = "HypnotiserTests"
+               ReferencedContainer = "container:Hypnotiser.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8A694A9918DA393E002A7E42"
-            BuildableName = "RondomItems"
-            BlueprintName = "RondomItems"
-            ReferencedContainer = "container:RondomItems.xcodeproj">
+            BlueprintIdentifier = "8A5244C01909ACD700317CE4"
+            BuildableName = "Hypnotiser.app"
+            BlueprintName = "Hypnotiser"
+            ReferencedContainer = "container:Hypnotiser.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -51,10 +61,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8A694A9918DA393E002A7E42"
-            BuildableName = "RondomItems"
-            BlueprintName = "RondomItems"
-            ReferencedContainer = "container:RondomItems.xcodeproj">
+            BlueprintIdentifier = "8A5244C01909ACD700317CE4"
+            BuildableName = "Hypnotiser.app"
+            BlueprintName = "Hypnotiser"
+            ReferencedContainer = "container:Hypnotiser.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -69,10 +79,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8A694A9918DA393E002A7E42"
-            BuildableName = "RondomItems"
-            BlueprintName = "RondomItems"
-            ReferencedContainer = "container:RondomItems.xcodeproj">
+            BlueprintIdentifier = "8A5244C01909ACD700317CE4"
+            BuildableName = "Hypnotiser.app"
+            BlueprintName = "Hypnotiser"
+            ReferencedContainer = "container:Hypnotiser.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
