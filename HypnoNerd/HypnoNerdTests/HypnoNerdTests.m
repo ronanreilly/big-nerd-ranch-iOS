@@ -1,18 +1,18 @@
 //
-//  HypnotiserTests.m
-//  HypnotiserTests
+//  HypnoNerdTests.m
+//  HypnoNerdTests
 //
-//  Created by Ronan Sean Reilly on 24/04/2014.
+//  Created by Ronan Sean Reilly on 10/05/2014.
 //  Copyright (c) 2014 Ronan Sean Reilly. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 
-@interface HypnotiserTests : XCTestCase
+@interface HypnoNerdTests : XCTestCase
 
 @end
 
-@implementation HypnotiserTests
+@implementation HypnoNerdTests
 
 - (void)setUp
 {
