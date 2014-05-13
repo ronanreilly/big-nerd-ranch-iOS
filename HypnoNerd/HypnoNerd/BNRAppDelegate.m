@@ -8,6 +8,7 @@
 
 #import "BNRAppDelegate.h"
 #import "BNRHypnosisViewController.h"
+#import "BNRReminderViewController.h"
 
 @implementation BNRAppDelegate
 
@@ -18,7 +19,16 @@
     
     // Set our VC as root VC
     BNRHypnosisViewController *hvc = [[BNRHypnosisViewController alloc] init];
-    self.window.rootViewController = hvc;
+    //self.window.rootViewController = hvc;
+    
+    // pointer to object that represents app bundle
+    NSBundle *appBundle = [NSBundle mainBundle];
+    
+    // Look in appBundle for our reminder view controller xib
+    BNRReminderViewController *rvc = [[BNRReminderViewController alloc] initWithNibName:@"BNRReminderViewController" bundle:appBundle];
+    self.window.rootViewController = rvc;
+    
+    
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
