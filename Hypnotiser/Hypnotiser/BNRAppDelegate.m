@@ -14,10 +14,43 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    CGRect firstFrame = self.window.bounds;
+    /*CGRect firstFrame = self.window.bounds;
     BNRHypnosisView *firstView = [[BNRHypnosisView alloc] initWithFrame:firstFrame];
     //firstView.backgroundColor = [UIColor redColor];
-    [self.window addSubview:firstView];
+    [self.window addSubview:firstView];*/
+    
+    // Creating a super sized View inside a scroll view
+    // Create CGRects for Frames
+    
+    CGRect screenRect = self.window.bounds;
+    CGRect bigRect = screenRect;
+    bigRect.size.width *= 2.0;
+    //bigRect.size.height *= 2.0;
+    
+    // create a screen sized scroll view and add to window.
+    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:screenRect];
+    [self.window addSubview:scrollView];
+    
+    // Before turning on this you could stop in the middle of two screens, this snaps to
+    // next screen.
+    scrollView.pagingEnabled = YES;
+    
+    // create super sizsed hypnosis view and add to scroll view
+    //BNRHypnosisView *hypnosisView = [[BNRHypnosisView alloc] initWithFrame:bigRect];
+    //[scrollView addSubview:hypnosisView];
+    
+    // create a screen sized hypnosis view and add it to the scroll view
+    BNRHypnosisView *hypnosisView = [[BNRHypnosisView alloc] initWithFrame:screenRect];
+    [scrollView addSubview:hypnosisView];
+    
+    // add a second screen sized view off to teh right
+    screenRect.origin.x += screenRect.size.width;
+    BNRHypnosisView *anotherView = [[BNRHypnosisView alloc] initWithFrame:screenRect];
+    [scrollView addSubview:anotherView];
+    
+    
+    // tell scroll view how big its content area is
+    scrollView.contentSize = bigRect.size;
     
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];

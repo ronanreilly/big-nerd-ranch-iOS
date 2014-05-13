@@ -8,6 +8,13 @@
 
 #import "BNRHypnosisView.h"
 
+// This is a class extension with one property for circle color.
+@interface BNRHypnosisView ()
+
+@property (strong, nonatomic) UIColor *circleColor;
+
+@end
+
 @implementation BNRHypnosisView
 
 - (id)initWithFrame:(CGRect)frame
@@ -18,8 +25,15 @@
         
         // set background color for view
         self.backgroundColor = [UIColor clearColor];
+        self.circleColor = [UIColor lightGrayColor];
     }
     return self;
+}
+
+// Custom accessor that changes the color of our circles
+-(void)setCircleColor:(UIColor *)circleColor{
+    _circleColor = circleColor;
+    [self setNeedsDisplay];
 }
 
 
@@ -65,7 +79,10 @@
                      clockwise:YES];
     }
     
-    [[UIColor lightGrayColor] setStroke];
+    //[[UIColor lightGrayColor] setStroke];
+    
+    // Use circleColor from init
+    [self.circleColor setStroke];
     
     path.lineWidth = 10.0;
     
@@ -74,6 +91,19 @@
     UIImage *logoImage = [UIImage imageNamed:@"logo"];
     [logoImage drawInRect:CGRectMake(60, 134, 200, 300)];
     
+}
+
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    NSLog(@"%@ was touched", self);
+    
+    // Get 3 numbers between 1 - 0
+    float red = (arc4random() % 100) /100.0;
+    float green = (arc4random() % 100) /100.0;
+    float blue = (arc4random() % 100) /100.0;
+    
+    UIColor *randomColor = [UIColor colorWithRed:red green:green blue:blue alpha:1.0];
+    
+    self.circleColor = randomColor;
 }
 
 
