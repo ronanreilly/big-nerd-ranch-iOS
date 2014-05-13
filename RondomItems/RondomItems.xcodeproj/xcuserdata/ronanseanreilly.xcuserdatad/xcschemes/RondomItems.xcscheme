@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8AFEF03C18C3F248004717AE"
-               BuildableName = "Quiz.app"
-               BlueprintName = "Quiz"
-               ReferencedContainer = "container:Quiz.xcodeproj">
+               BlueprintIdentifier = "8A694A9918DA393E002A7E42"
+               BuildableName = "RondomItems"
+               BlueprintName = "RondomItems"
+               ReferencedContainer = "container:RondomItems.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,24 +28,14 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8AFEF05718C3F249004717AE"
-               BuildableName = "QuizTests.xctest"
-               BlueprintName = "QuizTests"
-               ReferencedContainer = "container:Quiz.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8AFEF03C18C3F248004717AE"
-            BuildableName = "Quiz.app"
-            BlueprintName = "Quiz"
-            ReferencedContainer = "container:Quiz.xcodeproj">
+            BlueprintIdentifier = "8A694A9918DA393E002A7E42"
+            BuildableName = "RondomItems"
+            BlueprintName = "RondomItems"
+            ReferencedContainer = "container:RondomItems.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -61,10 +51,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8AFEF03C18C3F248004717AE"
-            BuildableName = "Quiz.app"
-            BlueprintName = "Quiz"
-            ReferencedContainer = "container:Quiz.xcodeproj">
+            BlueprintIdentifier = "8A694A9918DA393E002A7E42"
+            BuildableName = "RondomItems"
+            BlueprintName = "RondomItems"
+            ReferencedContainer = "container:RondomItems.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -79,10 +69,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8AFEF03C18C3F248004717AE"
-            BuildableName = "Quiz.app"
-            BlueprintName = "Quiz"
-            ReferencedContainer = "container:Quiz.xcodeproj">
+            BlueprintIdentifier = "8A694A9918DA393E002A7E42"
+            BuildableName = "RondomItems"
+            BlueprintName = "RondomItems"
+            ReferencedContainer = "container:RondomItems.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

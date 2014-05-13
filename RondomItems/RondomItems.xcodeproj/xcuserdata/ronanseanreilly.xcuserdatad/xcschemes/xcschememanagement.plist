@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Quiz.xcscheme</key>
+		<key>RondomItems.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>8AFEF03C18C3F248004717AE</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>8AFEF05718C3F249004717AE</key>
+		<key>8A694A9918DA393E002A7E42</key>
 		<dict>
 			<key>primary</key>
 			<true/>
