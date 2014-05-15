@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A1365731922D85F00B4D058 /* BNRReminderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1365721922D85F00B4D058 /* BNRReminderViewController.m */; };
+		8A1365751922D9A900B4D058 /* BNRReminderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A1365741922D9A900B4D058 /* BNRReminderViewController.xib */; };
 		8A52B530191ED5D90085FFB8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A52B52F191ED5D90085FFB8 /* Foundation.framework */; };
 		8A52B532191ED5D90085FFB8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A52B531191ED5D90085FFB8 /* CoreGraphics.framework */; };
 		8A52B534191ED5D90085FFB8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A52B533191ED5D90085FFB8 /* UIKit.framework */; };
@@ -34,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8A1365711922D85F00B4D058 /* BNRReminderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRReminderViewController.h; sourceTree = "<group>"; };
+		8A1365721922D85F00B4D058 /* BNRReminderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRReminderViewController.m; sourceTree = "<group>"; };
+		8A1365741922D9A900B4D058 /* BNRReminderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BNRReminderViewController.xib; sourceTree = "<group>"; };
 		8A52B52C191ED5D90085FFB8 /* HypnoNerd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HypnoNerd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A52B52F191ED5D90085FFB8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8A52B531191ED5D90085FFB8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -113,6 +118,9 @@
 		8A52B535191ED5D90085FFB8 /* HypnoNerd */ = {
 			isa = PBXGroup;
 			children = (
+				8A1365741922D9A900B4D058 /* BNRReminderViewController.xib */,
+				8A1365711922D85F00B4D058 /* BNRReminderViewController.h */,
+				8A1365721922D85F00B4D058 /* BNRReminderViewController.m */,
 				8A52B561191ED6810085FFB8 /* BNRHypnosisViewController.h */,
 				8A52B562191ED6810085FFB8 /* BNRHypnosisViewController.m */,
 				8A52B55E191ED6420085FFB8 /* BNRHypnosisView.h */,
@@ -230,6 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A1365751922D9A900B4D058 /* BNRReminderViewController.xib in Resources */,
 				8A52B53A191ED5D90085FFB8 /* InfoPlist.strings in Resources */,
 				8A52B542191ED5D90085FFB8 /* Images.xcassets in Resources */,
 			);
@@ -253,6 +262,7 @@
 				8A52B563191ED6810085FFB8 /* BNRHypnosisViewController.m in Sources */,
 				8A52B53C191ED5D90085FFB8 /* main.m in Sources */,
 				8A52B540191ED5D90085FFB8 /* BNRAppDelegate.m in Sources */,
+				8A1365731922D85F00B4D058 /* BNRReminderViewController.m in Sources */,
 				8A52B560191ED6420085FFB8 /* BNRHypnosisView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -454,6 +464,7 @@
 				8A52B55A191ED5DA0085FFB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8A52B55B191ED5DA0085FFB8 /* Build configuration list for PBXNativeTarget "HypnoNerdTests" */ = {
 			isa = XCConfigurationList;
@@ -462,6 +473,7 @@
 				8A52B55D191ED5DA0085FFB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

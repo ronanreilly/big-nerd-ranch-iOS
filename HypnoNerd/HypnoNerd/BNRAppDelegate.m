@@ -8,6 +8,7 @@
 
 #import "BNRAppDelegate.h"
 #import "BNRHypnosisViewController.h"
+#import "BNRReminderViewController.h"
 
 @implementation BNRAppDelegate
 
@@ -18,7 +19,23 @@
     
     // Set our VC as root VC
     BNRHypnosisViewController *hvc = [[BNRHypnosisViewController alloc] init];
-    self.window.rootViewController = hvc;
+    //self.window.rootViewController = hvc;
+    
+    // pointer to object that represents app bundle
+    //NSBundle *appBundle = [NSBundle mainBundle];
+    
+    // Look in appBundle for our reminder view controller xib
+    /*BNRReminderViewController *rvc = [[BNRReminderViewController alloc] initWithNibName:@"BNRReminderViewController" bundle:appBundle];*/
+    //self.window.rootViewController = rvc;
+    
+    // Creating BNRReminderViewController without passing bundle or xib
+    BNRReminderViewController *rvc = [[BNRReminderViewController alloc] init];
+    
+    // A tab view controller to switch between our two views.
+    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+    tabBarController.viewControllers= @[hvc, rvc];
+    
+    self.window.rootViewController = tabBarController;
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
