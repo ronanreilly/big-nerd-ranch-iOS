@@ -9,6 +9,7 @@
 #import "BNRAppDelegate.h"
 #import "BNRHypnosisViewController.h"
 #import "BNRReminderViewController.h"
+#import "BNRQuizControllerViewController.h"
 
 @implementation BNRAppDelegate
 
@@ -31,9 +32,13 @@
     // Creating BNRReminderViewController without passing bundle or xib
     BNRReminderViewController *rvc = [[BNRReminderViewController alloc] init];
     
+    // **** Bronze Challenge
+    // Crating the quiz view controller
+    BNRQuizControllerViewController *qvc = [[BNRQuizControllerViewController alloc] init];
+    
     // A tab view controller to switch between our two views.
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
-    tabBarController.viewControllers= @[hvc, rvc];
+    tabBarController.viewControllers= @[hvc, rvc, qvc];
     
     self.window.rootViewController = tabBarController;
     

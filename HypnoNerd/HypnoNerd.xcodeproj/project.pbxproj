@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A0409BA192BFB8600531343 /* BNRQuizControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0409B8192BFB8600531343 /* BNRQuizControllerViewController.m */; };
+		8A0409BB192BFB8600531343 /* BNRQuizControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A0409B9192BFB8600531343 /* BNRQuizControllerViewController.xib */; };
 		8A1365731922D85F00B4D058 /* BNRReminderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1365721922D85F00B4D058 /* BNRReminderViewController.m */; };
 		8A1365751922D9A900B4D058 /* BNRReminderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A1365741922D9A900B4D058 /* BNRReminderViewController.xib */; };
 		8A52B530191ED5D90085FFB8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A52B52F191ED5D90085FFB8 /* Foundation.framework */; };
@@ -36,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8A0409B7192BFB8600531343 /* BNRQuizControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BNRQuizControllerViewController.h; path = ../BNRQuizControllerViewController.h; sourceTree = "<group>"; };
+		8A0409B8192BFB8600531343 /* BNRQuizControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BNRQuizControllerViewController.m; path = ../BNRQuizControllerViewController.m; sourceTree = "<group>"; };
+		8A0409B9192BFB8600531343 /* BNRQuizControllerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BNRQuizControllerViewController.xib; path = ../BNRQuizControllerViewController.xib; sourceTree = "<group>"; };
 		8A1365711922D85F00B4D058 /* BNRReminderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRReminderViewController.h; sourceTree = "<group>"; };
 		8A1365721922D85F00B4D058 /* BNRReminderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRReminderViewController.m; sourceTree = "<group>"; };
 		8A1365741922D9A900B4D058 /* BNRReminderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BNRReminderViewController.xib; sourceTree = "<group>"; };
@@ -118,6 +123,9 @@
 		8A52B535191ED5D90085FFB8 /* HypnoNerd */ = {
 			isa = PBXGroup;
 			children = (
+				8A0409B7192BFB8600531343 /* BNRQuizControllerViewController.h */,
+				8A0409B8192BFB8600531343 /* BNRQuizControllerViewController.m */,
+				8A0409B9192BFB8600531343 /* BNRQuizControllerViewController.xib */,
 				8A1365741922D9A900B4D058 /* BNRReminderViewController.xib */,
 				8A1365711922D85F00B4D058 /* BNRReminderViewController.h */,
 				8A1365721922D85F00B4D058 /* BNRReminderViewController.m */,
@@ -240,6 +248,7 @@
 			files = (
 				8A1365751922D9A900B4D058 /* BNRReminderViewController.xib in Resources */,
 				8A52B53A191ED5D90085FFB8 /* InfoPlist.strings in Resources */,
+				8A0409BB192BFB8600531343 /* BNRQuizControllerViewController.xib in Resources */,
 				8A52B542191ED5D90085FFB8 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +270,7 @@
 			files = (
 				8A52B563191ED6810085FFB8 /* BNRHypnosisViewController.m in Sources */,
 				8A52B53C191ED5D90085FFB8 /* main.m in Sources */,
+				8A0409BA192BFB8600531343 /* BNRQuizControllerViewController.m in Sources */,
 				8A52B540191ED5D90085FFB8 /* BNRAppDelegate.m in Sources */,
 				8A1365731922D85F00B4D058 /* BNRReminderViewController.m in Sources */,
 				8A52B560191ED6420085FFB8 /* BNRHypnosisView.m in Sources */,

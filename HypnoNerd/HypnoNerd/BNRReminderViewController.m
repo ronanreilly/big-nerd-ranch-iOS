@@ -43,6 +43,14 @@
     NSLog(@"BNRReminderViewController loaded its view.");
 }
 
+// Override thsi method so that the date picker is configured everytime the view is loaded.
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    // set minimum date to 60 second from now.
+    self.datePicker.minimumDate = [NSDate dateWithTimeIntervalSinceNow:60];
+}
+
 -(IBAction)addReminder:(id)sender
 {
     NSDate *date = self.datePicker.date;
