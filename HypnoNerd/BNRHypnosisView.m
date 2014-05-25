@@ -11,8 +11,6 @@
 // This is a class extension with one property for circle color.
 @interface BNRHypnosisView ()
 
-@property (strong, nonatomic) UIColor *circleColor;
-
 @end
 
 @implementation BNRHypnosisView

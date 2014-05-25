@@ -10,4 +10,7 @@
 
 @interface BNRHypnosisView : UIView
 
+// By putting this property here we can access it from our view controller.
+@property (strong, nonatomic) UIColor *circleColor;
+
 @end
