@@ -9,8 +9,7 @@
 #import "BNRHypnosisViewController.h"
 #import "BNRHypnosisView.h"
 
-@interface BNRHypnosisView ()
-
+@interface BNRHypnosisView () <UITextFieldDelegate>
 @end
 
 @implementation BNRHypnosisViewController
@@ -75,14 +74,67 @@
     
 }
 
+-(BOOL)textFieldShouldReturn:(UITextField *)textField{
+    NSLog(@"%@", textField);
+    [self drawHypnoticMessage:textField.text];
+    
+    textField.text = @"";
+    [textField resignFirstResponder];
+    
+    return YES;
+}
+
+-(void)drawHypnoticMessage:(NSString *)message{
+    for (int i = 0; i < 20; i++) {
+        UILabel *messageLabel = [[UILabel alloc] init];
+        
+        // configure labels
+        messageLabel.backgroundColor = [UIColor clearColor];
+        messageLabel.textColor = [UIColor whiteColor];
+        messageLabel.text = message;
+        
+        // resize label relative to text being displayed
+        [messageLabel sizeToFit];
+        
+        // Get a random value that fits within the hypnosis view's width
+        int width = (int)(self.view.bounds.size.width - messageLabel.bounds.size.width);
+        
+        int x = arc4random() % width;
+        
+        // get random y value that fits within the hypnosis views height
+        int height = (int)(self.view.bounds.size.height - messageLabel.bounds.size.height);
+        
+        int y = arc4random() % height;
+        
+        // Update the label's frame
+        CGRect frame = messageLabel.frame;
+        frame.origin = CGPointMake(x,y);
+        messageLabel.frame = frame;
+        
+        // add the label to the heirarchy
+        [self.view addSubview:messageLabel];
+        
+    }
+}
 
 // Overriding loadView
 -(void)loadView
 {
-    // create a view
-    BNRHypnosisView *backgroundView = [[BNRHypnosisView alloc] init];
+    CGRect frame = [UIScreen mainScreen].bounds;
+    BNRHypnosisView *backgroundView = [[BNRHypnosisView alloc] initWithFrame:frame];
     
-    // set it as the view of this controller
+    CGRect textFieldRect = CGRectMake(40, 70, 240, 30);
+    UITextField *textField = [[UITextField alloc] initWithFrame:textFieldRect];
+    
+    // Set the border style on the text field will allow us to see it more easily
+    textField.borderStyle = UITextBorderStyleRoundedRect;
+    [backgroundView addSubview:textField];
+    
+    textField.placeholder = @"Hypnotise Me!";
+    textField.returnKeyType = UIReturnKeyDone;
+    
+    textField.delegate = self;
+    
     self.view = backgroundView;
 }
 
