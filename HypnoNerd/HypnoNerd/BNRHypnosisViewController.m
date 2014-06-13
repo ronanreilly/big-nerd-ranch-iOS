@@ -85,6 +85,7 @@
 }
 
 -(void)drawHypnoticMessage:(NSString *)message{
+    
     for (int i = 0; i < 20; i++) {
         UILabel *messageLabel = [[UILabel alloc] init];
         
@@ -113,6 +114,26 @@
         
         // add the label to the heirarchy
         [self.view addSubview:messageLabel];
+        
+        // Set up parralax scrolling on label's
+        
+        UIInterpolatingMotionEffect *motionEffect;
+        
+        // Setting up horizontal axis
+        motionEffect = [[UIInterpolatingMotionEffect alloc] initWithKeyPath:@"center.x" type:UIInterpolatingMotionEffectTypeTiltAlongHorizontalAxis];
+        
+        motionEffect.minimumRelativeValue = @(-25);
+        motionEffect.maximumRelativeValue = @(25);
+        
+        [messageLabel addMotionEffect:motionEffect];
+        
+        // Setting up vertical axis
+        motionEffect = [[UIInterpolatingMotionEffect alloc] initWithKeyPath:@"center.y" type:UIInterpolatingMotionEffectTypeTiltAlongVerticalAxis];
+        
+        motionEffect.minimumRelativeValue = @(-25);
+        motionEffect.maximumRelativeValue = @(25);
+        
+        [messageLabel addMotionEffect:motionEffect];
         
     }
 }
