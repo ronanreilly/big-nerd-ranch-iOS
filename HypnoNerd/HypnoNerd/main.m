@@ -11,7 +11,8 @@
 #import "BNRAppDelegate.h"
 
 int main(int argc, char * argv[])
-{
+{   // Responsible for maintaining the Run Loop. Executing thread will never retrun to main.
+    // The last argument here is string. This is the class anme for the app's delegate. In this case BNRAppDelegate.
     @autoreleasepool {
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([BNRAppDelegate class]));
     }

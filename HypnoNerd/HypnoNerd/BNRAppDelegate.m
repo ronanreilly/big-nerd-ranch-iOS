@@ -13,6 +13,7 @@
 
 @implementation BNRAppDelegate
 
+// First message sent in every run loop.
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
